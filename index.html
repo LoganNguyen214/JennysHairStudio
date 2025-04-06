@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jenny's Hair Studio</title>
+    <style>
+      body {
+        background-color: #fff1dc;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* HEADER */
+      header {
+        position: relative;
+        background-color: #e9d8c3;
+        color: #333333;
+        padding: 2rem;
+        font-family: "Playfair Display", serif;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+        border-bottom: 1px solid #d6c2b0;
+        text-align: center;
+      }
+
+      .logo {
+        position: absolute;
+        top: 50%;
+        left: 2rem;
+        transform: translateY(-50%);
+        height: 100px;
+      }
+
+      .header-text h1 {
+        margin: 0;
+        font-size: 2.5rem;
+      }
+
+      .tagline {
+        margin-top: 0.25rem;
+        font-size: 1rem;
+        color: #5c5c5c;
+        font-family: "Poppins", sans-serif;
+      }
+
+      /* NAVIGATION */
+      nav {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        background-color: #d6c2b0;
+        padding: 0.5rem;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+      }
+
+      /* HERO SECTION */
+      .hero {
+        background-image: url("images/logo_fff8e7.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0 20px;
+      }
+
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+
+      .hero p {
+        font-size: 1.2rem;
+      }
+
+      /* GENERAL SECTION */
+      .section {
+        padding: 2rem;
+        text-align: center;
+      }
+
+      /* SERVICES */
+      .services {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+      }
+
+      .service {
+        width: 200px;
+        background-color: #f8f8f8;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      /* IMAGE GALLERY */
+      .image_gallery {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 40px 20px;
+        background-color: #f5ebdd;
+        flex-wrap: wrap;
+      }
+
+      .image_gallery img {
+        width: 100%;
+        max-width: 300px;
+        height: 200px;
+        border-radius: 16px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        object-fit: cover;
+      }
+
+      .image_gallery img:hover {
+        transform: scale(1.03);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+      }
+
+      /* FOOTER */
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <img src="./images/noun-scissors-7636495.svg" alt="Logo" class="logo" />
+      <div class="header-text">
+        <h1>Jenny's Hair Studio</h1>
+        <p class="tagline">A Local Touch for Every Look</p>
+      </div>
+    </header>
+
+    <!-- NAV -->
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+      <a href="#book">Book Now</a>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <div class="hero"></div>
+
+    <!-- IMAGE GALLERY -->
+    <div class="image_gallery">
+      <img src="./images/Hair_Shampoo.jpg" alt="Hair Shampooing" />
+      <img src="./images/Hair Cutting.jpg" alt="Hair Cutting" />
+      <img src="./images/Hair Curling.jpg" alt="Hair Curling" />
+    </div>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="section">
+      <h2>Our Services</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Haircuts</h3>
+          <p>Precision cuts for all hair types</p>
+        </div>
+        <div class="service">
+          <h3>Color</h3>
+          <p>Highlights, balayage, and full color</p>
+        </div>
+        <div class="service">
+          <h3>Treatments</h3>
+          <p>Revitalize your hair with deep conditioning</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section">
+      <h2>Contact Us</h2>
+      <p>1184 CR 261 Tupelo, MS 38801</p>
+      <p>Phone: (662)-790-4014</p>
+      <p>Email: JennyDickson@yahoo.com</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>&copy; 2025 Jenny's Hair Studio. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
